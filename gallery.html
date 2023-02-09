@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <style>
+        .bk{
+    position: sticky;
+    top:0px;
+    z-index: 3;}
+
+.hd{
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* background-color: #55680D; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:lavender;
+    font-size: 30px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-family:'Josefin Sans';
+        transition: all 5s;
+}
+    
+    @keyframes wr {
+        from{ top: 0;
+            background: linear-gradient(rgba(14, 77, 122, 0.305), rgba(62, 245, 74, 0.333), rgba(183, 59, 59, 0.432)), url('background-image.jpg');
+        
+            width: 100%;
+            height: 100vh;
+            font-size: 150px;
+            justify-content: center;
+        align-items: center;
+        }
+        50%{
+            background: linear-gradient(rgba(14, 77, 122, 0.315), rgba(62, 245, 74, 0.359), rgba(183, 59, 59, 0.282)), url('background-image.jpg');
+            width: 100vw;
+            height: 100vh;
+            font-size: 50px;
+            justify-content: center;
+        align-items: center;
+        }
+        100%{
+            background: linear-gradient(rgba(14, 77, 122, 0.293), rgba(62, 245, 74, rgba(183, 59, 59, 0.195) 59, 59)), url('background-image.jpg');
+            width: 100vw;
+            height: 40px;
+
+            justify-content: center;
+        align-items: center;
+        }
+    }
+
+section{
+    margin-left: 112px;
+}
+
+body{
+    margin: 0px;
+        margin: 0px;
+        background: linear-gradient(rgba(146, 68, 218, 0.37),rgba(0, 128, 0, 0.375)) ,url('i-love-you-with-hearts-6a8kxhza7a91xzj5.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        min-width: 650px;
+    
+}
+
+nav{
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+nav:hover
+{  
+    
+background: linear-gradient(rgba(255, 0, 0, 0.274), rgba(0, 0, 255, 0.312),rgba(0, 128, 0, 0.274));
+}
+.dv{
+    display: inline-block;
+    background: linear-gradient(#55680D, #71F53E, #3ac76b);
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 225px;
+    /* margin-right: 120px; */
+    color: rgb(123, 163, 13);
+    transition: all 2s;
+}
+.dv:hover{
+    transform: skew(180deg);
+    background: linear-gradient(green,rgb(195, 147, 37),green);
+}
+a{
+    color:rgb(7, 9, 114);
+    text-decoration: none;
+}
+a:hover{
+   
+    color: aquamarine;
+}
+.hd:hover{
+    /* height: 100vh; */
+    background: linear-gradient(rgb(193, 57, 193),rgb(54, 54, 189),rgb(154, 27, 154));
+}
+
+
+ .img{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+    animation: imk 5s;
+    
+ }
+ .im{
+    /* background-color: aqua; */
+    margin: 2px;
+    position: relative;
+    
+    /* animation: imm 5s; */
+ }
+ @keyframes imm {
+    from{
+        visibility: hidden;
+        top:50vh;
+        left: 50vw;
+    }
+
+    50%{
+        visibility: visible;
+        
+    }
+    100%{
+        width: 296px;
+    }
+ }
+ img{
+    width: 296px;
+    height: 256px;
+    z-index: 3;
+    position: relative;
+    margin: 20px;
+    transition: all 0.8s;
+    border-radius: 20px;
+;
+ }
+ 
+ img:hover{
+    transform: scale(1.5);
+   display: block;
+    z-index: 10;
+}
+ 
+    @media screen and (max-width: 480px) {
+        body {
+            
+          background: linear-gradient(rgba(0, 0, 255, 0.132),rgba(0, 128, 0, 0.11),rgba(255, 255, 0, 0.104)), url('IMG_20221119_155545288_HDR.jpg');
+            background-size:cover;
+            background-attachment: fixed;
+        }
+        .hd{
+            
+            font-style: italic;
+        }
+        nav{
+           transition: none;
+        }
+        .dv{
+            min-width: 650px;
+        }
+        .img{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:repeat(10,auto) ;
+    justify-content: center;
+    
+    z-index: -10;
+ }
+ img{
+  width: 100%;
+  height: 350px;
+  transition: none;
+ }
+ img:hover{
+    transform: none;
+   display: block;
+    z-index: 10;
+}
+      }</style>
+</head>
+<body>
+   <div class="bk">
+    <header class="hd"><a href="lv.html">Welcome to LOSITE</a></header>
+    <nav>
+        <div class="dv" id="d1"><a href="start.html" target="_blank"> How it all started</a></div>
+        <div class="dv" id="d2"><a href="dates.html" target="_blank">Important Dates and Events</a></div>
+        <div class="dv" id="d3"><a href="https://docs.google.com/forms/d/e/1FAIpQLScADhBktMBNM36ZREllbMREKL81t_Cgw4N9-A6EE_OvtbDjyg/viewform" target="_blank">Current Journey</a></div>
+        <div class="dv" id="d4"><a href="gallery.html" target="">Gallery</a></div>
+    </nav></div>
+    <h1 style="color: blueviolet;">How cute she is:))</h1>
+    <div class="img">
+        <div class="im" ><img src="Screenshot_20220720-202508~2.png" id="t1" alt="ice cream"></div>
+        <div class="im" ><img src="Screenshot_20220811-121956.png"id="t2"  alt="ice cream"></div>
+        <div class="im" ><img src="Screenshot_20220927-170648~2.png" id="t3" alt="ice cream"></div>
+        <div class="im" ><img src="Screenshot_20221227-160554.png" id="t5" alt="ice cream"></div>
+        <div class="im" ><img src="IMG_20230209_224101_566.jpg" id="t6" alt="ice cream"></div>
+        <div class="im" ><img src="IMG_20230209_224106_032.jpg" id="t7" alt="ice cream"></div>
+        <div class="im" ><img src="IMG_20230209_224123_700.jpg" id="t9" alt="ice cream"></div>
+        <div class="im" ><img src="IMG_20230209_223958_462.jpg" id> </div>
+        <div class="im" ><img src="IMG_20230209_224006_693.jpg"id="t4"  alt="ice cream"></div>
+    </div>
