@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinij</title>
+<!--     <link rel="stylesheet" href="styles.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="https://img.freepik.com/free-vector/romantic-love-message-hearts-background_1017-29964.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    <style>
+        
+ /* ConCepts Used here:
+1. flexbox
+2. animation- full page animation
+3. sticky fixed position
+4. Transition
+5.Transformation
+6. Favicon
+ */
+
+.bk{
+    position: sticky;
+    top:0px;
+    z-index: 3;}
+
+.hd{
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* background-color: #55680D; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:lavender;
+    font-size: 30px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-family:'Josefin Sans';
+        animation: wr 8s 0s;
+        transition: all 5s;}
+       
+    
+    @keyframes wr {
+        from{ top: 0;
+            background: linear-gradient(rgba(14, 77, 122, 0.305), rgba(62, 245, 74, 0.333), rgba(183, 59, 59, 0.432)), url('Valentine_Catherine-Scott.jpg');
+            background-size: cover;  
+            background-attachment: fixed;
+            background-repeat: no-repeat;         
+            width: 100%;
+            height: 100vh;
+            font-size: 150px;
+            justify-content: center;
+        align-items: center;
+        }
+        50%{
+            background: linear-gradient(rgba(14, 77, 122, 0.315), rgba(62, 245, 74, 0.359), rgba(183, 59, 59, 0.282)), url('Valentine_Catherine-Scott.jpg');
+ 
+            width: 100vw;
+            height: 100vh;
+            font-size: 50px;
+            justify-content: center;
+        align-items: center;
+        }
+        100%{
+            background: linear-gradient(rgba(14, 77, 122, 0.293), rgba(62, 245, 74, rgba(183, 59, 59, 0.195) 59, 59)), url('Valentine_Catherine-Scott.jpg');
+ 
+            width: 100vw;
+            height: 40px;
+
+            justify-content: center;
+        align-items: center;
+        }
+    }
+
+section{
+    margin-left: 112px;
+}
+
+body{
+    margin: 0px;
+        margin: 0px;
+        background: linear-gradient(rgba(146, 68, 218, 0.37),rgba(0, 128, 0, 0.375)) ,url('i-love-you-with-hearts-6a8kxhza7a91xzj5.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        min-width: 650px;
+    
+}
+
+nav{
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+nav:hover
+{  
+    
+background: linear-gradient(rgba(255, 0, 0, 0.274), rgba(0, 0, 255, 0.312),rgba(0, 128, 0, 0.274));
+}
+.dv{
+    display: inline-block;
+    background: linear-gradient(#55680D, #71F53E, #3ac76b);
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    width: 225px;
+    transition: all 2s;
+    /* margin-right: 120px; */
+    color: rgb(123, 163, 13);
+}
+.dv:hover{
+    transform: skew(180deg);
+    background: linear-gradient(green,rgb(195, 147, 37),green);
+}
+
+a{
+    color:rgb(7, 9, 114);
+    text-decoration: none;
+}
+a:hover{
+   
+    color: aquamarine;
+}
+.hd:hover{
+    /* height: 100vh; */
+    background: linear-gradient(rgb(193, 57, 193),rgb(54, 54, 189),rgb(154, 27, 154));
+}
+.mi{
+    /* border: 2px solid rgb(134, 144, 31); */
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    animation: wt 3s 0s;
+    animation: wm 3s 0s;
+    justify-content: center;
+    padding: 5px;
+}
+@keyframes wm {
+    from{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+}
+@keyframes wt {
+    from{ top: 0;
+        /* background: linear-gradient(rgba(14, 77, 122, 0.305), rgba(62, 245, 74, 0.333), rgba(183, 59, 59, 0.432)), url('background-image.jpg'); */
+        width: 100%;
+        height: 100vh;
+        font-size: 150px;
+        justify-content: center;
+    align-items: center;
+    }
+    50%{
+        
+        /* background: linear-gradient(rgba(14, 77, 122, 0.315), rgba(62, 245, 74, 0.359), rgba(183, 59, 59, 0.282)), url('background-image.jpg'); */
+        width: 100vw;
+        height: 100vh;
+        font-size: 50px;
+        justify-content: center;
+    align-items: center;
+    }
+    /* 100%{ */
+        /* background: linear-gradient(rgba(14, 77, 122, 0.293), rgba(62, 245, 74, rgba(183, 59, 59, 0.195) 59, 59)), url('background-image.jpg'); */
+        width: 100vw;
+        height: 40px;
+
+        justify-content: center;
+    align-items: center;
+    }
+
+
+.im{
+    /* background: url('Planet9_Wallpaper_5000x2813.jpg'); */
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: inline-block; */
+    /* display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center; */
+    height: 200px;
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+}
+.ds{
+    /* display: inline; */
+    /* padding-right: 0px */
+    /* width: 0%; */
+}
+
+.im h1{
+    margin: auto;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid red;
+    /* background-color: #6c11554b; */
+    
+    color: rgb(108, 198, 193);
+    animation: we 10s 1.5s ;
+    transition: all 3s;
+}
+.im h1:hover{
+    transform: skew(30deg);
+    height: 20vh;
+    width: 20vw;
+    background: linear-gradient(rgba(255, 0, 0, 0.274), rgba(0, 0, 255, 0.312),rgba(0, 128, 0, 0.274));
+}
+
+@keyframes we {
+    from{
+        background-color: rgba(0, 255, 255, 0.341);
+    
+    }
+    to{
+        background-color: palevioletred;
+    }
+    }
+
+.im p{
+    color: rgb(12, 3, 47);
+    width:560px;
+    height: 10px;
+    overflow:hidden;
+    position: relative;
+    /* animation: me 5s 0s 1; */
+    display: inline-block;
+    align-content: center;
+    /* background-color: #55680D; */
+    background: linear-gradient(rgba(255, 0, 0, 0.274), rgba(0, 0, 255, 0.312),rgba(0, 128, 0, 0.274));
+
+    transition: all 2s;
+}
+p:hover{
+    height: 400px;
+    background:linear-gradient(rgba(0, 221, 255, 0.505),rgba(177, 182, 25, 0.473),rgba(221, 92, 180, 0.571));
+}
+@keyframes me{
+    from{
+        /* width: 200px; */
+        top: 400px;
+    /* visibility: hidden; */
+    display:none;}
+    25%{
+        top: 200px;
+    }
+    50%{
+        top: 400px;
+        width: 200px;
+    }
+    /* 75%{
+        top: 200px;
+    } */
+    to{
+        top: 0px;
+    
+    }
+}
+
+.form{
+    width: 658px;
+    /* display: inline-block;  */
+    background: linear-gradient(rgba(0, 0, 255, 0.29), rgba(238, 130, 238, 0.29), rgba(0, 128, 0, 0.285));
+    margin-bottom: 20px;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    
+    bottom: auto;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+    @media screen and (max-width: 480px) {
+        body {
+            
+            background: linear-gradient(rgba(0, 0, 255, 0.132),rgba(0, 128, 0, 0.11),rgba(255, 255, 0, 0.104)), url();
+            background-size:cover;
+            /* background-attachment: fixed; */
+            
+        }
+        .hd{
+            height: 20vh;
+            font-size: 50px;
+            font-style: italic;
+            animation: wr 8s 0s;
+        }
+        @keyframes wr {
+        from{ top: 0;
+            color: rgba(240, 248, 255, 0.052);
+            background: linear-gradient(rgba(14, 77, 122, 0.305), rgba(62, 245, 74, 0.333), rgba(183, 59, 59, 0.432)), url('mahal-kita.gif');
+            background-size:cover;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            /* background-image: url('https://cdn.quotesgram.com/img/94/64/306059134-il_570xN_770659583_lpmu.jpg');
+            background-size: cover; */
+            min-width: 100vw;
+            min-height: 400vh;
+            font-size: 150px;
+            justify-content: center;
+        align-items: center;
+        }
+        15%{
+            
+            /* visibility: hidden; */
+            background: linear-gradient(rgba(14, 77, 122, 0.315), rgba(62, 245, 74, 0.359), rgba(183, 59, 59, 0.282)), url('mahal-kita.gif');
+            background-size:cover;
+            background-repeat: no-repeat;
+            left: 30px;
+            /* background-attachment: fixed; */
+            /* background-image: url('https://cdn.quotesgram.com/img/94/64/306059134-il_570xN_770659583_lpmu.jpg');
+            background-size: cover; */
+            min-width: 100vw;
+            min-height: 150vh;
+            font-size: 50px;
+            justify-content: center;
+        align-items: center;
+
+        }
+        85%{
+            background: linear-gradient(rgba(14, 77, 122, 0.315), rgba(62, 245, 74, 0.359), rgba(183, 59, 59, 0.282)), url('mahal-kita.gif');
+            background-size:cover;
+            
+            /* background-image: url('https://cdn.quotesgram.com/img/94/64/306059134-il_570xN_770659583_lpmu.jpg');
+            background-size: cover; */
+            min-width: 100vw;
+            min-height: 150vh;
+            font-size: 50px;
+            justify-content: center;
+        align-items: center;
+        }
+        100%{
+            background: linear-gradient(rgba(14, 77, 122, 0.293), rgba(62, 245, 74, rgba(183, 59, 59, 0.195) 59, 59)), url('mahal-kita.gif');
+            background-size:cover;
+            /* background-attachment: fixed; */
+            /* background-image: url('https://cdn.quotesgram.com/img/94/64/306059134-il_570xN_770659583_lpmu.jpg');
+            background-size: cover; */
+            min-width: 100vw;
+            min-height: 20px;
+
+            justify-content: center;
+        align-items: center;
+        }}
+        a{
+            animation: we 8s;
+        }
+        @keyframes we {
+            from{
+                color: rgba(240, 248, 255, 0.058);
+            }
+            70%{
+                color: rgba(240, 248, 255, 0.081);
+            }
+        }
+        
+        .dv{
+            font-size: 30px;
+            min-width: 650px;
+        }
+        .mi{
+            background: url('https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:eco%2Cw_1200/MTc0NDY4NTk0NjQwMzY1MTkw/alternative-ways-to-say-i-love-you.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .im h1{
+            background-color: rgba(137, 43, 226, 0.693);
+        }
+            .im h1:hover{
+    transform: skew(30deg);
+    height: 20vh;
+    width: 100vw;
+    background: linear-gradient(rgba(255, 0, 0, 0.493), rgba(0, 0, 255, 0.438),rgba(0, 128, 0, 0.466));
+    color: rgb(156, 173, 223);
+   
+}
+
+        
+        .im p{
+            transition: all 3s;
+        }
+        .im p:hover{
+            height: 200px;
+             
+        }
+        .im{
+            margin: 10px;
+            transition: all 3s;
+        }
+        .im:hover{
+            margin-bottom: 10px;
+        }}
+      </style>
+</head>
+<body>
+   <div class="bk">
+    <header class="hd"><a href="lv.html">Welcome to LOSITE</a></header>
+    <nav>
+        <div class="dv" id="d1"><a href="start.html" target="_blank"> How it all started</a></div>
+        <div class="dv" id="d2"><a href="dates.html" target="_blank">Important Dates and Events</a></div>
+        <div class="dv" id="d3"><a href="https://docs.google.com/forms/d/e/1FAIpQLScADhBktMBNM36ZREllbMREKL81t_Cgw4N9-A6EE_OvtbDjyg/viewform?usp=sf_link" target="_blank">Current Journey</a></div>
+        <!-- <div class="dv" id="d4"><a href="sd.html" target="_blank">Similarities and Differences</a></div> -->
+        <div class="dv" id="d4"><a href="gallery.html" target="_blank">Gallery</a></div>
+    </nav></div>
+    <div class="mi">
+    <div class="im">
+        <!-- <div class="ds"> -->
+            <h1 >
+            For you<br>My love Tin
+        </h1>
+    <p class="desc">
+        I made this website for you my love, Tin. This is like a way for me of thanking you for being a part of my life. We were not talking much in the past few days as I was busy creating this website and didn’t told you as I wanted to give you a surprise. I was thinking to launch this website on February 14, i.e. the Valentine’s day, but it would give a wrong message that I think about loving you on just one day.
+        We’re not like other couples, who just have one day to celebrate love. We have love everyday even though we don’t talk, as we don’t need to show our love for each other and I hope it will never be less.
+        When I had no one with whom I can share everything to, you came to my life, and my life is like never before. Now, I became so close to you that my day doesn’t get completed without you. 
+            </p></div>
+    <div class="form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdrDNUurFLxYFHkmkg8Zpc3UEHpjgzRu5KXZzWhOW1Sw7ALFQ/viewform?embedded=true" width="640" height="975" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+    
+    <footer>
+        What Do you think it's just simple editing? <a href="https://github.com/Nijanshu/nijan" target="">click here </a>to know how this website is built
+    </footer>
+    </div>
+    
+</body>
+</html>
